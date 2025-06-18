@@ -1,1 +1,29 @@
 /*  your css code here. If applicable */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  width: 800px;
+  max-width: 1000px;
+  grid-gap: 2px;
+}
+
+.square {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #1d1d1d;
+  transition: background-color 1s ease;
+}
