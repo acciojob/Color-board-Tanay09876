@@ -1,4 +1,4 @@
-/*  your css code here. If applicable */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,17 +13,22 @@ body {
   height: 100vh;
 }
 
+/* Container for the board */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
   width: 800px;
   max-width: 1000px;
   grid-gap: 2px;
+  height: auto;
 }
 
+/* Each square box */
 .square {
   width: 100%;
   aspect-ratio: 1;
-  background-color: #1d1d1d;
+  background-color: rgb(29, 29, 29); /* Default color required by test */
   transition: background-color 1s ease;
+  min-height: 20px; /* Ensure visibility for testing */
+  cursor: pointer;
 }
